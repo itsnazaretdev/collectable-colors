@@ -5,7 +5,7 @@ export const backgrounds = [
   background:
     'radial-gradient(circle at center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%, transparent 55%), #eeeae2',
   tailwind:
-    'bg-[radial-gradient(circle at center,rgb(255,255,255) 0%,rgb(255,255,255) 25%,transparent 55%),#eeeae2]',
+    'bg-[radial-gradient(circle_at_center,rgb(255,255,255)_0%,rgb(255,255,255)_25%,transparent_55%),#eeeae2]',
 },
 
 {
@@ -14,7 +14,7 @@ export const backgrounds = [
   background:
     'radial-gradient(circle at center, rgba(255, 190, 110, 0.4), transparent 60%), #0d0d0d',
   tailwind:
-    'bg-[radial-gradient(circle at center,rgba(255,190,110,0.4),transparent 60%),#0d0d0d]',
+    'bg-[radial-gradient(circle_at_center,rgba(255,190,110,0.4),transparent_60%),#0d0d0d]',
 },
 
 {
@@ -23,7 +23,7 @@ export const backgrounds = [
   background:
     'radial-gradient(ellipse 90% 45% at 50% -5%, rgb(133, 133, 173) 0%, rgba(102, 102, 141, 0.35) 40%, transparent 75%), linear-gradient(180deg, #111113 0%, #0d0d0d 100%)',
   tailwind:
-    'bg-[radial-gradient(ellipse 90% 45% at 50% -5%,rgb(133,133,173) 0%,rgba(102,102,141,0.35) 40%,transparent 75%),linear-gradient(180deg,#111113 0%,#0d0d0d 100%)]',
+    'bg-[radial-gradient(ellipse_90%_45%_at_50%_-5%,rgb(133,133,173)_0%,rgba(102,102,141,0.35)_40%,transparent_75%),linear-gradient(180deg,#111113_0%,#0d0d0d_100%)]',
 },
 
 {
@@ -32,7 +32,7 @@ export const backgrounds = [
   background:
     'radial-gradient(ellipse 90% 45% at 50% -5%, rgb(226, 215, 239) 0%, rgba(201, 187, 220, 0.35) 40%, transparent 75%), linear-gradient(180deg, #f8f8f8 0%, #efefef 100%)',
   tailwind:
-    'bg-[radial-gradient(ellipse 90% 45% at 50% -5%,rgb(226,215,239) 0%,rgba(201,187,220,0.35) 40%,transparent 75%),linear-gradient(180deg,#f8f8f8 0%,#efefef 100%)]',
+    'bg-[radial-gradient(ellipse_90%_45%_at_50%_-5%,rgb(226,215,239)_0%,rgba(201,187,220,0.35)_40%,transparent_75%),linear-gradient(180deg,#f8f8f8_0%,#efefef_100%)]',
 },
 
  {
@@ -248,7 +248,7 @@ export const backgrounds = [
   background:
     'linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), repeating-linear-gradient(to bottom, rgba(0,0,0,0.35) 0px, rgba(0,0,0,0.35) 1px, transparent 1px, transparent 3px), radial-gradient(circle at 48% 40%, rgba(255,0,60,0.55) 0%, transparent 35%), radial-gradient(circle at 52% 40%, rgba(0,255,255,0.55) 0%, transparent 35%), radial-gradient(circle at 50% 40%, rgba(255,0,220,0.6) 0%, rgba(255,200,0,0.4) 30%, transparent 60%), #020203; background-blend-mode: normal, normal, screen, screen, screen, normal',
   tailwind:
-    '[background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),repeating-linear-gradient(to bottom,rgba(0,0,0,0.35) 0px,rgba(0,0,0,0.35) 1px,transparent 1px,transparent 3px),radial-gradient(circle at 48% 40%,rgba(255,0,60,0.55) 0%,transparent 35%),radial-gradient(circle at 52% 40%,rgba(0,255,255,0.55) 0%,transparent 35%),radial-gradient(circle at 50% 40%,rgba(255,0,220,0.6) 0%,rgba(255,200,0,0.4) 30%,transparent 60%),#020203] [background-blend-mode:normal,normal,screen,screen,screen,normal]',
+    '[background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),repeating-linear-gradient(to_bottom,rgba(0,0,0,0.35)_0px,rgba(0,0,0,0.35)_1px,transparent_1px,transparent_3px),radial-gradient(circle_at_48%_40%,rgba(255,0,60,0.55)_0%,transparent_35%),radial-gradient(circle_at_52%_40%,rgba(0,255,255,0.55)_0%,transparent_35%),radial-gradient(circle_at_50%_40%,rgba(255,0,220,0.6)_0%,rgba(255,200,0,0.4)_30%,transparent_60%),#020203] [background-blend-mode:normal,normal,screen,screen,screen,normal]',
 },
   {
     title: 'Overdrive',
