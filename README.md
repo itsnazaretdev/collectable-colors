@@ -8,6 +8,8 @@ A curated collection of ready-to-use CSS and Tailwind CSS backgrounds.
 
 Explore different visual styles, preview them in context, and copy the exact code you need for your project.
 
+**[Live site →](https://collectable-colors.vercel.app/)** · [Source](https://github.com/itsnazaretdev/collectable-colors)
+
 ## ✨ What is Collectable Colors?
 
 Collectable Colors is a visual collection of backgrounds designed to make it easier to find interesting backgrounds for websites, landing pages, portfolios, blogs, dashboards, and other digital projects.
@@ -90,6 +92,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## ❤️ Made for experimentation
 
-Colletable Color is intended to make experimenting with visual direction quick and enjoyable.
+Collectable Colors is intended to make experimenting with visual direction quick and enjoyable.
 
 Find something interesting, try it in your project, change the colors, adjust the gradients, and make it your own.
