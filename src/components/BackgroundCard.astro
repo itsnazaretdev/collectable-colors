@@ -110,18 +110,24 @@ const code = `background: ${background};`;
   const buttons = document.querySelectorAll('.copy-button');
 
   buttons.forEach((button) => {
+    const originalText = button.textContent;
+    let resetTimeout;
+
     button.addEventListener('click', async () => {
       const code = button.getAttribute('data-code');
 
       if (!code) return;
 
-      await navigator.clipboard.writeText(code);
+      try {
+        await navigator.clipboard.writeText(code);
+        button.textContent = 'Copied!';
+      } catch {
+        button.textContent = 'Copy failed';
+      }
 
-      const originalText = button.textContent;
+      clearTimeout(resetTimeout);
 
-      button.textContent = 'Copied!';
-
-      setTimeout(() => {
+      resetTimeout = setTimeout(() => {
         button.textContent = originalText;
       }, 1500);
     });
