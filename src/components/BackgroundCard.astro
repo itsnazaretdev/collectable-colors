@@ -50,13 +50,14 @@ import { slugify } from "../utils/slugify";
     border-radius: 1rem;
     background: var(--bg-card);
   }
-
+  
   
   .preview {
     aspect-ratio: 16 / 10;
   }
-
+  
   .card-content {
+    color: var(--card-text);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +70,7 @@ import { slugify } from "../utils/slugify";
     font-family: 'Space Grotesk', sans-serif;
     font-size: var(--fs-base);
     font-weight: 500;
-    color: var(--color-text);
+    color: var(--card-text);
   }
 
   .card-actions {
@@ -83,7 +84,7 @@ import { slugify } from "../utils/slugify";
     border: 0;
     padding: 0;
     background: none;
-    color: var(--color-text-muted);
+    color: var(--card-text);
     font-family: 'Space Grotesk', sans-serif;
     font-size: var(--fs-sm);
     cursor: pointer;
@@ -92,7 +93,7 @@ import { slugify } from "../utils/slugify";
 
   .preview-button:hover,
   .copy-button:hover {
-    color: var(--color-text);
+    color: var(--card-text);
   }
 
   @media (max-width: 600px) {

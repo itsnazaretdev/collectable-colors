@@ -1,11 +1,12 @@
 :root {
-  --color-bg: #f0f0f0;
+  --color-bg: #efece7d7;
   --color-text: #2e2e2e;
   --color-text-muted: #6e6b76;
   --color-accent-gold: #d8a435;
   --color-accent-violet: #a47ecf;
   --border-color: #bbb8c2;
-  --bg-card: #f5f0e7e6;
+  --bg-card: #e6e6e6f9;
+  --card-text: #444444;
 
   --font-display: 'Fraunces', serif;
   --font-body: 'Space Grotesk', sans-serif;
