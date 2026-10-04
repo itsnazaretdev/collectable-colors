@@ -2,13 +2,14 @@
 const { title, background, theme, tailwind } = Astro.props;
 
 const code = `background: ${background};`;
+import { slugify } from "../utils/slugify";
 ---
 
 <article class="background-card reveal" data-theme={theme}>
   <div class="preview" style={`background: ${background};`}></div>
 
   <div class="card-content">
-    <h2>{title}</h2>
+    <h2><a href={`/backgrounds/${slugify(title)}`}>{title}</a></h2>
 
     <div class="card-actions">
       <button

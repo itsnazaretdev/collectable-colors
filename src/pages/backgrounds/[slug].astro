@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BackgroundCard from '../../components/BackgroundCard.astro';
+import { backgrounds } from '../../data/backgrounds';
+import { slugify } from '../../utils/slugify';
+
+export function getStaticPaths() {
+  const titles = [...new Set(backgrounds.map((bg) => bg.title))];
+
+  return titles.map((title) => ({
+    params: { slug: slugify(title) },
+    props: {
+      title,
+      variants: backgrounds.filter((bg) => bg.title === title),
+    },
+  }));
+}
+
+const { title, variants } = Astro.props;
+
+const pageTitle = `${title} CSS Background – Light & Dark (CSS + Tailwind)`;
+const pageDescription = `Copy-paste ${title} background in CSS and Tailwind. Light and dark versions, ready for your next project.`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main>
+    <a href="/">← All backgrounds</a>
+    <h1>{title} CSS background</h1>
+    <p>Copy the CSS or the Tailwind class and paste it into your project.</p>
+
+    {variants.map((variant) => (
+      <BackgroundCard {...variant} />
+    ))}
+  </main>
+</Layout>
