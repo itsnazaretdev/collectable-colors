@@ -107,11 +107,11 @@ const code = `background: ${background};`;
 </style>
 
 <script>
-  const buttons = document.querySelectorAll('.copy-button');
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.copy-button');
 
   buttons.forEach((button) => {
-    const originalText = button.textContent;
-    let resetTimeout;
+    const originalText = button.textContent ?? 'Copy';
+    let resetTimeout: number | undefined;
 
     button.addEventListener('click', async () => {
       const code = button.getAttribute('data-code');
@@ -125,9 +125,11 @@ const code = `background: ${background};`;
         button.textContent = 'Copy failed';
       }
 
-      clearTimeout(resetTimeout);
+      if (resetTimeout !== undefined) {
+        window.clearTimeout(resetTimeout);
+      }
 
-      resetTimeout = setTimeout(() => {
+      resetTimeout = window.setTimeout(() => {
         button.textContent = originalText;
       }, 1500);
     });

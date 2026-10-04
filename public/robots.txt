@@ -1,4 +1,4 @@
-   User-agent: *
-   Allow: /
+User-agent: *
+Allow: /
 
-   Sitemap: https://collectable-colors.vercel.app/sitemap-index.xml
+Sitemap: https://collectable-colors.vercel.app/sitemap-index.xml
