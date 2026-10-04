@@ -1,4 +1,5 @@
 ---
+import PreviewModal from '../components/PreviewModal.astro';
 const { title, description } = Astro.props;
 import "../styles/global.css"
 ---
@@ -19,5 +20,6 @@ import "../styles/global.css"
 	</head>
 	<body>
 		<slot />
+		<PreviewModal />
 	</body>
 </html>

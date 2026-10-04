@@ -23,13 +23,42 @@ const pageDescription = `Copy-paste ${title} background in CSS and Tailwind. Lig
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
-  <main>
+  <main class="detail">
     <a href="/">← All backgrounds</a>
     <h1>{title} CSS background</h1>
     <p>Copy the CSS or the Tailwind class and paste it into your project.</p>
 
-    {variants.map((variant) => (
-      <BackgroundCard {...variant} />
-    ))}
+    <div class="variants">
+      {variants.map((variant) => (
+        <BackgroundCard {...variant} />
+      ))}
+    </div>
   </main>
 </Layout>
+
+<style>
+  .detail {
+    max-width: 64rem;
+    margin-inline: auto;
+    padding: 3rem 1.5rem;
+    font-family: var(--font-body);
+  }
+
+  .detail h1 {
+    font-family: var(--font-display);
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .variants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    .variants {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
