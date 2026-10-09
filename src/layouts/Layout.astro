@@ -2,6 +2,8 @@
 import PreviewModal from '../components/PreviewModal.astro';
 import '../styles/global.css';
 
+import Analytics from '@vercel/analytics/astro';
+
 const { title, description, image = '/og-default.jpg' } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -48,5 +50,6 @@ const imageURL = new URL(image, Astro.site);
   <body>
     <slot />
     <PreviewModal />
+    <Analytics />
   </body>
 </html>
